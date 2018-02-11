@@ -1,6 +1,8 @@
 package com.example.trishachetani.wwcode;
 
+import android.content.Intent;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +17,12 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 
 public class MainActivity extends AppCompatActivity {
+    EditText firstNumber;
+    EditText secondNumber;
+    TextView addResult;
+    Button btnAdd;
+
+    double num1, num2, sum;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -25,19 +33,25 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Start home activity
+
+
+
         setContentView(R.layout.activity_main);
-        Button addBtn = (Button)findViewById(R.id.addButton);
-        addBtn.setOnClickListener(new View.OnClickListener() {
+        firstNumber = (EditText) findViewById(R.id.txtNumber1);
+        secondNumber = (EditText) findViewById(R.id.txtNumber2);
+        addResult = (TextView) findViewById(R.id.txtResult);
+        btnAdd = (Button) findViewById(R.id.btnAdd);
+
+        btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //define what we want to do
-                EditText firstNumEditText = (EditText) findViewById(R.id.firstEditText);
-                EditText secondNumEditText = (EditText) findViewById(R.id.secondEditText);
-                int num1 = Integer.parseInt(firstNumEditText.getText().toString());
-                int num2 = Integer.parseInt(secondNumEditText.getText().toString());
-                int result = num1+ num2;
-                TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
-                resultTextView.setText(result+"");
+                num1 = Double.parseDouble(firstNumber.getText().toString());
+                num2 = Double.parseDouble(secondNumber.getText().toString());
+                sum = num1 + num2;
+                addResult.setText(Double.toString(sum));
+                //  addResult.setText(sum+"");
 
 
 
