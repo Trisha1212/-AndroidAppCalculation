@@ -72,6 +72,7 @@ finish();
  ```
  ### APK :
  * how to install apk in your phone(https://stackoverflow.com/questions/4756451/how-to-install-an-apk-file-on-an-android-phone)
+ -APK FILE :
  ```
  https://www.dropbox.com/s/4gpf78hwenppvt5/app-release.apk?dl=0
  ```
