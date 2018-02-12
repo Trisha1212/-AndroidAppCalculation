@@ -70,12 +70,18 @@ finish();
  ```
  https://www.dropbox.com/s/4w13fesup98d0af/AndroidAppCalculator.mov?dl=0
  ```
+ 
+
+![Imgur](https://i.imgur.com/7idcmge.gif)
+
+
  ### APK :
  * how to install apk in your phone(https://stackoverflow.com/questions/4756451/how-to-install-an-apk-file-on-an-android-phone)
- -APK FILE :
+ -APK FILE can be downloaded :
  ```
  https://www.dropbox.com/s/4gpf78hwenppvt5/app-release.apk?dl=0
  ```
+-  How to run your app on real device (https://developer.android.com/training/basics/firstapp/running-app.html)
  
 
 
